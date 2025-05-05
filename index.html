@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+    />
+
+    <link
+      <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="left-container">
+      <div class="left-title">
+        <img
+          src="images/67DA2EE4-50B8-4EC8-8C24-E66BF384E9F2.png"
+          alt="logo"
+          class="logo"
+        />
+        <h1 class="title">bunker lottery!</h1>
+      </div>
+      <p class="credits">photo from pinterest</p>
+    </div>
+
+    <div class="right-container">
+      <p class="intro">
+        think you've got what it takes to outlive humanity? this form might be
+        ur ticket into the bunker. tell us who you are, what weird skills you
+        bring, and how stable (or unstable) you really are. <br /><br />
+        no pressure, just the fate of ur survival.
+      </p>
+
+      <form>
+        <fieldset class="basic-info">
+          <legend>basic info *</legend>
+
+          <label for="name">name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="nova"
+          />
+
+          <label for="email">email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="fuck@gmail.com"
+          />
+
+          <label for="tel">phone number</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            required
+            placeholder="xxx-xxx-xxxx"
+          />
+
+          <label for="skill">useless skill you'd bring</label>
+          <input type="text" id="skill" name="skill" required />
+
+          <label for="password">password</label>
+          <input type="text" name="password" id="password" required />
+
+          <label for="confirmPassword">confirm password</label>
+          <input
+            type="text"
+            name="confirmPassword"
+            id="confirmPassword"
+            required
+          />
+        </fieldset>
+
+        <fieldset class="survival-level">
+          <legend>survival level</legend>
+
+          <label for="level">skill level</label>
+          <select name="level" id="level">
+            <option value="" disabled selected>choose wisely,,,</option>
+            <option value="die">i'd die in the first 24hrs</option>
+            <option value="watched">i've watched naked and afraid once</option>
+            <option value="cockroach">certified cockroach energy</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="apocalypse-weapon">
+          <legend>fav apocalypse weapon</legend>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" name="weapon" />
+            <span class="checkmark"></span>
+            flamethrower
+          </label>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" name="weapon" />
+            <span class="checkmark"></span>
+            duct tape
+          </label>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" name="weapon" />
+            <span class="checkmark"></span>
+            pure emotional manipulation
+          </label>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" name="weapon" />
+            <span class="checkmark"></span>
+            a really good meme arsenal
+          </label>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" name="weapon" />
+            <span class="checkmark"></span>
+            canned beans
+          </label>
+        </fieldset>
+
+        <fieldset class="emotional-stability">
+          <legend>emotional stability</legend>
+
+          <label class="custom-radio">
+            <input type="radio" name="stability" value="one" />
+            <span class="radio-dot"></span>
+            1 - i cry when the ice cream machine is broken
+          </label>
+
+          <label class="custom-radio">
+            <input type="radio" name="stability" value="two" />
+            <span class="radio-dot"></span>
+            2 - i stare at the wall for three hours when someone ghosts me
+          </label>
+
+          <label class="custom-radio">
+            <input type="radio" name="stability" value="three" />
+            <span class="radio-dot"></span>
+            3 - i've accepted that life is chaos and just vibe through it now
+          </label>
+
+          <label class="custom-radio">
+            <input type="radio" name="stability" value="four" />
+            <span class="radio-dot"></span>
+            4 - i once comforted <i>someone else</i> at <i>my</i> breakup
+          </label>
+
+          <label class="custom-radio">
+            <input type="radio" name="stability" value="five" />
+            <span class="radio-dot"></span>
+            5 - i could bury bodies without thinking
+          </label>
+        </fieldset>
+
+        <fieldset class="optional">
+          <legend>optional</legend>
+          <label for="roommate">bunker roomate preference</label>
+          <input type="text" id="roommate" name="roommate" />
+        </fieldset>
+
+        <p id="required">* required</p>
+
+        <button type="submit" class="create">create account</button>
+        <p class="begged">
+          already begged? <a href="" class="check-status">check status</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
